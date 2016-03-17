@@ -8,13 +8,13 @@ Terminals don't know how wide characters really are :disappointed::disappointed:
 wcswidth-as-a-service to the rescue :smile::smile::smile:! Simply GET a path to obtain its width:
 
 ```sh
-> curl http://wcswidth.xiaq.me/Hello
+> curl http://wcwidth.xiaq.me/Hello
 5
-> curl http://wcswidth.xiaq.me/こんいちは
+> curl http://wcwidth.xiaq.me/こんいちは
 10
-> curl http://wcswidth.xiaq.me/蛤蛤
+> curl http://wcwidth.xiaq.me/蛤蛤
 4
-> curl http://wcswidth.xiaq.me/🌚
+> curl http://wcwidth.xiaq.me/🌚
 2
 ```
 
