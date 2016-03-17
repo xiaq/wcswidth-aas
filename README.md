@@ -1,11 +1,11 @@
 # wcwidth as a service
 
-Terminal softwares don't know how wide characters really are (😔😔😔):
+Terminal softwares don't know how wide characters really are :disappointed::disappointed::disappointed::
 
 ![mac](https://raw.githubusercontent.com/xiaq/wcwidth-aas/master/mac.png)
 ![linux](https://raw.githubusercontent.com/xiaq/wcwidth-aas/master/linux.png)
 
-wcwidth-as-a-service to the rescue (😄😄😄)! Simply GET a path to obtain its width:
+wcwidth-as-a-service to the rescue :smile::smile::smile:! Simply GET a path to obtain its width:
 
 ```sh
 > curl http://wcwidth.xiaq.me/Hello
@@ -20,5 +20,5 @@ wcwidth-as-a-service to the rescue (😄😄😄)! Simply GET a path to obtain i
 
 What to do next:
 
-- [ ] Replace all `wcwidth` implementations with a simple HTTP GET
+- [ ] Just replace all `wcwidth` implementations in glibc, Cairo, vim, libvte and tmux with a dead-simple HTTP GET
 - [ ] ... profit!
