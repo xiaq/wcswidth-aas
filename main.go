@@ -13,7 +13,7 @@ var addr = flag.String("addr", ":1661", "address to listen")
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	s := strings.TrimPrefix(r.URL.Path, "/")
-	fmt.Fprintln(w, WcWidths(s))
+	fmt.Fprintln(w, WcsWidth(s))
 }
 
 func main() {
@@ -113,9 +113,9 @@ func WcWidth(r rune) int {
 	return 1
 }
 
-// WcWidths returns the width of a string when displayed on the terminal,
+// WcsWidth returns the width of a string when displayed on the terminal,
 // assuming no soft line breaks.
-func WcWidths(s string) (w int) {
+func WcsWidth(s string) (w int) {
 	for _, r := range s {
 		w += WcWidth(r)
 	}
